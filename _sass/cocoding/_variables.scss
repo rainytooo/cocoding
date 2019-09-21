@@ -1,0 +1,30 @@
+
+// font
+$base-font-family: 'Lato', sans-serif, "Microsoft YaHei", "微软雅黑";
+
+
+$spacing-unit: 30px;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+$on-medium:        $on-palm !default;
+$on-large:         $on-laptop !default;
+
+
+
+// ----------------------------- color -----------------------------
+// color palette
+$primary-color: #2f3542 !default;
+$light-primary-color: #747d8c !default;
+$primary-shade-color: #464d5e !default;
+
+// nav
+$nav-text-color: #dfe4ea;
+$nav-text-shade-color: #fff;
+
+// base color
+$text-color: #212529;
