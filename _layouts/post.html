@@ -14,28 +14,95 @@ layout: default
                     <li><a href="#">Upgrade</a></li>
                 </ul>
             </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </div>
+<div class="content-warpper">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+            <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+            <p class="post-meta">
+                <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M351.6 595.52a14.89 14.89 0 0 0 14.89-14.89v-95.07a14.89 14.89 0 0 0-14.89-14.89h-95.92a14.89 14.89 0 0 0-14.89 14.89v95.06a14.89 14.89 0 0 0 14.89 14.89z m0 187.7a14.89 14.89 0 0 0 14.89-14.89V672.4a14.89 14.89 0 0 0-14.89-14.89h-95.92a14.89 14.89 0 0 0-14.89 14.89v95.92a14.89 14.89 0 0 0 14.89 14.89z m207.5-187.7a14.89 14.89 0 0 0 14.9-14.9v-95.06a14.89 14.89 0 0 0-14.89-14.89h-95.93a14.89 14.89 0 0 0-14.89 14.89v95.06a14.89 14.89 0 0 0 14.89 14.89z m0 187.7a14.89 14.89 0 0 0 14.9-14.9V672.4a14.89 14.89 0 0 0-14.89-14.89h-95.93a14.89 14.89 0 0 0-14.89 14.89v95.92a14.89 14.89 0 0 0 14.89 14.89z m208.36-187.7a14.89 14.89 0 0 0 14.89-14.89v-95.07a14.89 14.89 0 0 0-14.89-14.89h-95.92a14.89 14.89 0 0 0-14.89 14.89v95.06a14.89 14.89 0 0 0 14.89 14.89zM803 97h-19.8v74.39a29.79 29.79 0 0 1-29.79 29.79h-66.12a29.79 29.79 0 0 1-29.79-29.79V97H367.35v74.39a29.79 29.79 0 0 1-29.79 29.79h-66.13a29.79 29.79 0 0 1-29.79-29.79V97h-19.8A124.84 124.84 0 0 0 97 221.84v580.31A124.85 124.85 0 0 0 221.85 927h580.31A124.84 124.84 0 0 0 927 802.16V221A124 124 0 0 0 803 97z m-5.17 789.53H221c-37 0-82.66-45.63-82.66-82.65V367.35h746.47v431.36c0.86 37.88-48.21 87.82-87 87.82z m-30.37-103.32a14.89 14.89 0 0 0 14.89-14.89V672.4a14.89 14.89 0 0 0-14.89-14.89h-95.92a14.89 14.89 0 0 0-14.89 14.89v95.92a14.89 14.89 0 0 0 14.89 14.89z" p-id="20018">
+                    </path>
+                </svg>
+                <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {%- assign date_format = site.cocoding.date_format | default: "%b %-d, %Y" -%}
+                    {{ page.date | date: date_format }}
+                </time>
+                {%- if page.author -%}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+                        itemprop="name">{{ page.author | escape }}</span></span>
+                {%- endif -%}
 
-    <header class="post-header">
-        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-        <p class="post-meta">
-            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                {{ page.date | date: date_format }}
-            </time>
-            {%- if page.author -%}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
-                    itemprop="name">{{ page.author | escape }}</span></span>
-            {%- endif -%}</p>
-    </header>
+                
+                
+            </p>
+            <!-- {% if page.categories.size > 0 %}
+            <div class="blog-cats">
+                {% for cat in page.categories %}
+                <a href="{{ '/tags' | relative_url }}#{{- cat -}}">{{- cat -}}</a>
+                {% endfor %}
+            </div>
+            {% endif %} -->
+        </header>
 
-    <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
+        <div class="post-content e-content" itemprop="articleBody">
+            {{ content }}
+        </div>
+
+        <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+        
+
+        
+    </article>
+    {% if page.tags.size > 0 %}
+    <div class="blog-tags">
+        Tags:
+        
+        {% for tag in page.tags %}
+        <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+        {% endfor %}
+        
     </div>
+    {% endif %}
 
-    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</div>
