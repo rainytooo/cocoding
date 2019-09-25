@@ -124,6 +124,7 @@ header {
     padding: 0;
     flex: 1 0 auto;
     // margin-top: 5em;
+    min-height: calc(100vh - 14em);
 }
 
 .wrapper {
@@ -180,7 +181,7 @@ header {
     }
 }
 
-.content-warpper {
+.content-wrapper {
     flex: 1 0 auto;
     width: calc(100% - 21.5em);
     padding-right: 10em;

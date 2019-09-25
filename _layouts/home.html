@@ -1,40 +1,86 @@
 ---
 layout: default
 ---
+<div class="page-sidebar">
+    <nav>
+        <ul>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">Upgrade</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Getting Start</span>
+                <ul>
+                    <li><a href="#">Quick Start</a></li>
+                    <li><a href="#">Installation</a></li>
+                    <li><a href="#">Configuration</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="content-wrapper">
+    <div class="posts-list-wrapper">
+        {%- if page.title -%}
+        <h1 class="page-heading">{{ page.title }}</h1>
+        {%- endif -%}
 
-<div class="home">
-    {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
+        {{ content }}
 
-    {{ content }}
+        {%- if site.posts.size > 0 -%}
+        <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
+        <ul class="post-list">
+            {%- for post in site.posts -%}
+            <li>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+        </ul>
 
-    {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                </a>
-            </h3>
-            {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-            {%- endif -%}
-        </li>
-        {%- endfor -%}
-    </ul>
+        
+        {%- endif -%}
 
-    <p class="feed-subscribe">
-        <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-                <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-        </a>
-    </p>
-    {%- endif -%}
-
+    </div>
 </div>
